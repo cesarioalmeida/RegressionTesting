@@ -25,7 +25,7 @@ namespace RegressionTesting.ViewModels
             RecentErrors = new ObservableCollection<RegressionError>(RegressionTests.SelectMany(x => x.UnitTests).Select(y => y.Error).Where(_ => _ != null));
         }
 
-        public virtual INavigationService NavigationService { get { return this.GetService<INavigationService>(); } }
+        public virtual INavigationService NavigationService => this.GetService<INavigationService>();
 
         public virtual MainNavigationEnum CurrentView { get; set; }
 

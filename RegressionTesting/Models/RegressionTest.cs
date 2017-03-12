@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.ObjectModel;
-using DevExpress.Mvvm;
+
 using DevExpress.Mvvm.DataAnnotations;
 using RegressionTesting.Enums;
 
@@ -23,10 +23,10 @@ namespace RegressionTesting.Models
 
         public virtual DateTime EndTime { get; set; }
 
-        public virtual TimeSpan RunTime { get { return EndTime - StartTime; } }
+        public virtual TimeSpan RunTime => this.EndTime - this.StartTime;
 
         public virtual ObservableCollection<UnitTest> UnitTests { get; set; }
 
-        public virtual int UnitTestsCount { get { return UnitTests.Count; } }
+        public virtual int UnitTestsCount => this.UnitTests.Count;
     }
 }

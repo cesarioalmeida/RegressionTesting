@@ -15,7 +15,7 @@ namespace RegressionTesting.Models
 
         public virtual DateTime EndTime { get; set; }
 
-        public virtual TimeSpan RunTime { get { return EndTime - StartTime; } }
+        public virtual TimeSpan RunTime => this.EndTime - this.StartTime;
 
         public virtual RegressionTestStateEnum State { get; set; }
 

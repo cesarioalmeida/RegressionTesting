@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
-using DevExpress.Mvvm.Native;
+
 using RegressionTesting.Enums;
 using RegressionTesting.Models;
 
@@ -26,7 +26,7 @@ namespace RegressionTesting.DataSources
 
             foreach (var regressionTest in regressionTests)
             {
-                var unitTests = Enumerable.Range(0, RandomNumberGenerator.Next(3,7)).Select(i => new UnitTest()
+                var unitTests = Enumerable.Range(0, RandomNumberGenerator.Next(3, 7)).Select(i => new UnitTest()
                 {
                     Parent = regressionTest,
                     Name = "Restatement Data Test " + i + 1,

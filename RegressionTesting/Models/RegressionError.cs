@@ -1,6 +1,5 @@
 ﻿using System;
 using DevExpress.Mvvm.DataAnnotations;
-using RegressionTesting.Enums;
 
 namespace RegressionTesting.Models
 {
