@@ -1,12 +1,11 @@
-﻿<UserControl
-    x:Class="RegressionTesting.Views.Links"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    d:DesignHeight="300"
-    d:DesignWidth="300"
-    mc:Ignorable="d">
+﻿<UserControl x:Class="RegressionTesting.Views.Links"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             d:DesignHeight="300"
+             d:DesignWidth="300"
+             mc:Ignorable="d">
     <UserControl.Resources>
 
         <ResourceDictionary>
@@ -14,7 +13,8 @@
                 <ResourceDictionary Source="../../Resources/Shared.xaml" />
             </ResourceDictionary.MergedDictionaries>
 
-            <Style x:Key="LinkTextStyle" TargetType="TextBlock">
+            <Style x:Key="LinkTextStyle"
+                   TargetType="TextBlock">
                 <Setter Property="HorizontalAlignment" Value="Left" />
                 <Setter Property="Foreground" Value="#3388EEFB" />
                 <Style.Triggers>
@@ -33,16 +33,19 @@
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        <Border Grid.Row="0" Style="{StaticResource SectionBorderStyle}">
-            <TextBlock Style="{StaticResource SectionTextStyle}" Text="Links" />
+        <Border Grid.Row="0"
+                Style="{StaticResource SectionBorderStyle}">
+            <TextBlock Style="{StaticResource SectionTextStyle}"
+                       Text="Links" />
         </Border>
 
-        <StackPanel Grid.Row="1" Margin="20,5,20,20">
-            <TextBlock
-                Margin="0,0,0,5"
-                Style="{StaticResource LinkTextStyle}"
-                Text="Regression Testing Help" />
-            <TextBlock Style="{StaticResource LinkTextStyle}" Text="PAE Wiki" />
+        <StackPanel Grid.Row="1"
+                    Margin="20,5,20,20">
+            <TextBlock Margin="0,0,0,5"
+                       Style="{StaticResource LinkTextStyle}"
+                       Text="Regression Testing Help" />
+            <TextBlock Style="{StaticResource LinkTextStyle}"
+                       Text="PAE Wiki" />
 
         </StackPanel>
 
