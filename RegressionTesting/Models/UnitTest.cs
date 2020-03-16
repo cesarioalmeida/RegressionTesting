@@ -1,9 +1,11 @@
-﻿using System;
-using DevExpress.Mvvm.DataAnnotations;
-using RegressionTesting.Enums;
-
-namespace RegressionTesting.Models
+﻿namespace RegressionTesting.Models
 {
+    using System;
+
+    using DevExpress.Mvvm.DataAnnotations;
+
+    using RegressionTesting.Enums;
+
     [POCOViewModel]
     public class UnitTest
     {

@@ -1,4 +1,4 @@
-﻿namespace RegressionTesting
+﻿namespace RegressionTesting.Enums
 {
     public enum MainNavigationEnum
     {

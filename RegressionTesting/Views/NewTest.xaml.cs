@@ -7,7 +7,7 @@
     {
         public NewTest()
         {
-            InitializeComponent();
+            this.InitializeComponent();
         }
     }
 }

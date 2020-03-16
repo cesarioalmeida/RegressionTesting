@@ -1,8 +1,9 @@
-﻿using System;
-using DevExpress.Mvvm.DataAnnotations;
-
-namespace RegressionTesting.Models
+﻿namespace RegressionTesting.Models
 {
+    using System;
+
+    using DevExpress.Mvvm.DataAnnotations;
+
     [POCOViewModel]
     public class RegressionError
     {

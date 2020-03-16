@@ -7,7 +7,7 @@
     {
         public LatestRegressionTest()
         {
-            InitializeComponent();
+            this.InitializeComponent();
         }
     }
 }

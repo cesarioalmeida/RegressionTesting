@@ -7,7 +7,7 @@
     {
         public Overview()
         {
-            InitializeComponent();
+            this.InitializeComponent();
         }
     }
 }

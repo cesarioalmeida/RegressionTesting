@@ -1,14 +1,13 @@
-﻿
-using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-
-using RegressionTesting.Enums;
-using RegressionTesting.Models;
-
-namespace RegressionTesting.DataSources
+﻿namespace RegressionTesting.DataSources
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Collections.ObjectModel;
+    using System.Linq;
+
+    using RegressionTesting.Enums;
+    using RegressionTesting.Models;
+
     public class RegressionTestsFactory
     {
         private static readonly Random RandomNumberGenerator = new Random();
@@ -20,7 +19,7 @@ namespace RegressionTesting.DataSources
                 {
                     Id = Guid.NewGuid(),
                     Name = "Test " + i + 1,
-                    CortexVersion = "Cortex201511" + RandomNumberGenerator.Next(10, 16),
+                    CortexVersion = "Vortex201711" + RandomNumberGenerator.Next(10, 16),
                     UnitTests = new ObservableCollection<UnitTest>()
                 }).ToList();
 
@@ -45,7 +44,6 @@ namespace RegressionTesting.DataSources
                         Error = "Exception: something happened here; " + RandomNumberGenerator.NextDouble(),
                         TimeStamp = x.EndTime
                     });
-
                 }
 
                 regressionTest.UnitTests = new ObservableCollection<UnitTest>(unitTests);
@@ -68,11 +66,10 @@ namespace RegressionTesting.DataSources
             return regressionTests.ToList();
         }
 
-        static T RandomEnumValue<T>()
+        private static T RandomEnumValue<T>()
         {
             var v = Enum.GetValues(typeof(T));
             return (T)v.GetValue(RandomNumberGenerator.Next(v.Length));
         }
-
     }
 }

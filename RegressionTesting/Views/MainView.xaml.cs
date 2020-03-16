@@ -7,7 +7,7 @@
     {
         public MainView()
         {
-            InitializeComponent();
+            this.InitializeComponent();
         }
     }
 }
