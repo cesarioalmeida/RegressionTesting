@@ -2,4 +2,4 @@
 
 A regression testing demo dashboard
 
-![alt text](https://imgur.com/Qq4nhvn "Regression Testing")
+![alt text](http://i.imgur.com/Qq4nhvn "Regression Testing")
